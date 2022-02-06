@@ -21,12 +21,16 @@ class ViewController: UIViewController {
         // who    what     value
         
         diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
-        diceImageView1.alpha = 0.5
-        
         diceImageView2.image = #imageLiteral(resourceName: "DiceTwo")
-        
     }
 
-
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+        diceImageView1.image = #imageLiteral(resourceName: "DiceFour")
+        diceImageView2.image = #imageLiteral(resourceName: "DiceFour")
+        
+        print("Button got tapped.")
+        
+    }
+    
 }
 
