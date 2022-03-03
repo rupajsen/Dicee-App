@@ -17,8 +17,13 @@ class ViewController: UIViewController {
 
     @IBAction func rollButtonPressed(_ sender: UIButton) {
         
+        // let allowed us to create a constant diceArray
+        
         let diceArray = [ #imageLiteral(resourceName: "DiceOne") , #imageLiteral(resourceName: "DiceTwo") , #imageLiteral(resourceName: "DiceThree") , #imageLiteral(resourceName: "DiceFour") , #imageLiteral(resourceName: "DiceFive") , #imageLiteral(resourceName: "DiceSix")]
         
+        // diceArray is used for array
+        // Int.random creates a random number in: from a no. to
+        // another no.
         
         diceImageView1.image = diceArray[Int.random(in: 1...5)]
         
